@@ -1,0 +1,30 @@
+<view class="container">
+  <view>
+    <image class="poster" src="{{image}}" mode="aspectFill"></image>
+  </view>
+  <view class="event-container">
+    <view class="title-container">
+        <text class="title">{{title}}</text>
+    </view>
+    <view class="box-container">
+      <view class="countdown-container">
+        <view wx:if="{{total_micro_second > 0}}">
+          <text style="display: block;font-size:30rpx;">距离开奖仅剩{{clock}}
+          </text>
+        </view>
+        <view wx:else>
+          <text style="display: block;font-size:30rpx;">{{clock}}
+          </text>
+        </view>
+      </view>
+      <view class="button-container" style="color:white" bind:tap="onTap">
+        <view wx:if="{{total_micro_second > 0}}">
+          报名
+        </view>
+        <view wx:else>
+          查看结果
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
