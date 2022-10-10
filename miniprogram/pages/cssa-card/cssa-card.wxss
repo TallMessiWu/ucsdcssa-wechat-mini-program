@@ -74,8 +74,7 @@
 }
 
 .l-title {
-    margin-top: 5rpx;
-    margin-left: 10rpx;
+    margin: 15rpx 15rpx 15rpx 15rpx;
     color: #C22A1E;
 }
 
