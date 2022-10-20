@@ -102,6 +102,7 @@ Page({
     },
 
     async checkCode() {
+        const openid = app.globalData.openid
         wx.showLoading({
             title: "验证邀请码中",
             mask: true
